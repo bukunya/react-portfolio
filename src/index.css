@@ -1,0 +1,164 @@
+:root {
+  --white: #fffaf6;
+  --black: #252930;
+  --dark: #57636b;
+  --light: #d0d5d4;
+}
+
+.dark-mode {
+  --white: #252930;
+  --black: #fffaf6;
+  --dark: #d0d5d4;
+  --light: #57636b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  line-height: 1.6;
+  padding-top: 76px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* Global animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Shared section styling */
+section {
+  padding: 5rem 0;
+}
+
+/* Shared card hover effects */
+.card {
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Shared button styles */
+.btn {
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Shared badge styling */
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Shared custom background colors */
+.bg-white {
+  background-color: var(--white) !important;
+  color: var(--black);
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+  color: var(--black);
+}
+
+.bg-dark {
+  background-color: var(--black) !important;
+  color: var(--white);
+}
+
+.text-primary {
+  color: var(--dark) !important;
+}
+
+.btn-primary {
+  background-color: var(--dark);
+  border-color: var(--dark);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.btn-outline-light {
+  border-color: var(--light);
+  color: var(--light);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--light);
+  color: var(--black);
+}
+
+/* Shared image transition */
+img {
+  transition: opacity 0.3s ease;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  background-color: var(--light) !important;
+  border: none;
+  color: var(--dark) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--black);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-top: 56px; /* Smaller navbar on mobile */
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .display-5 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+}

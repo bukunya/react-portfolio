@@ -1,0 +1,26 @@
+.custom-footer {
+  background-color: #252930 !important;
+  color: #fffaf6 !important;
+}
+
+.custom-footer h5,
+.custom-footer h6,
+.custom-footer p {
+  color: #fffaf6 !important;
+}
+
+.custom-footer hr {
+  border-color: #57636b !important;
+  opacity: 0.5;
+}
+
+.social-links a {
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: #fffaf6 !important;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  color: #d0d5d4 !important;
+}

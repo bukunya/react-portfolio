@@ -1,0 +1,47 @@
+.hero-section {
+  background: var(--white);
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  margin-top: -76px; /* Compensate for navbar padding */
+  padding-top: 76px; /* Add padding back */
+  color: var(--black);
+}
+
+.vh100 {
+  min-height: none;
+}
+
+.hero-content h1 {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-content h2 {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-content p {
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.hero-buttons {
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.hero-image img {
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+  border: 5px solid var(--black);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 120vh;
+    text-align: center;
+    margin-top: -56px;
+    padding-top: 56px;
+  }
+
+  .vh100 {
+    min-height: 80vh;
+  }
+}
