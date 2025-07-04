@@ -54,7 +54,10 @@ const About = () => {
                   </ul>
                 </div>
               </div>
-              <a href="#contact" className="btn btn-primary">
+              <a
+                href="https://github.com/bukunya/react-portfolio/blob/main/public/CV_Abdullah%20Afif%20Habiburrohman.pdf"
+                className="btn btn-primary"
+              >
                 Download CV
               </a>
             </div>
