@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="col-lg-6">
             <div className="hero-image text-center">
               <img
-                src="/hero-image.jpg"
+                src="hero-image.jpg"
                 alt="Abdullah Afif"
                 className="img-fluid shadow-lg"
                 style={{ maxWidth: "350px", width: "100%" }}
